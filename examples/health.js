@@ -1,13 +1,20 @@
-// Example: Nutritionix API (replace YOUR_APP_ID and YOUR_API_KEY)
+// Health APIs
+const APP_ID = "YOUR_APP_ID";
+const APP_KEY = "YOUR_APP_KEY";
 fetch("https://trackapi.nutritionix.com/v2/natural/nutrients", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
-    "x-app-id": "YOUR_APP_ID",
-    "x-app-key": "YOUR_API_KEY"
+    "x-app-id": APP_ID,
+    "x-app-key": APP_KEY
   },
-  body: JSON.stringify({ query: "1 apple" })
+  body: JSON.stringify({ query: "2 eggs" })
 })
   .then(res => res.json())
-  .then(data => console.log(data))
+  .then(data => console.log("Nutrition Info:", data))
+  .catch(err => console.error(err));
+
+fetch("https://disease.sh/v3/covid-19/all")
+  .then(res => res.json())
+  .then(data => console.log("COVID Data:", data))
   .catch(err => console.error(err));
