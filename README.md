@@ -85,3 +85,34 @@
 - [Stripe](https://stripe.com)
 
 🔹 Example: [examples/ecommerce.js](./examples/ecommerce.js)
+
+
+## ▶️ How to Run
+Make sure you have **Node.js v18+** installed.
+
+Run an example with:
+```bash
+node examples/general.js
+```
+
+## 🔑 API Keys
+Some APIs require authentication. Replace the placeholder values (`YOUR_API_KEY_HERE`) with your real API keys.
+
+| Service           | How to Get Key |
+|-------------------|----------------|
+| OpenWeatherMap    | https://openweathermap.org/api |
+| The Movie DB (TMDB) | https://www.themoviedb.org/documentation/api |
+| Mapbox            | https://www.mapbox.com/ |
+| OpenAI            | https://platform.openai.com/ |
+| HuggingFace       | https://huggingface.co/ |
+| Nutritionix       | https://developer.nutritionix.com/ |
+| NewsAPI           | https://newsapi.org/ |
+| Mediastack        | https://mediastack.com/ |
+| Stripe            | https://stripe.com/docs/api |
+
+## ⚠️ Notes
+- Some APIs (like OpenWeather, Stripe, OpenAI) require signup and keys.
+- Free APIs (like BoredAPI, DummyJSON, TVMaze, PokeAPI, etc.) will work directly.
+- If you see CORS errors in the browser, run them in **Node.js** instead.
+
+Happy coding! 🚀
